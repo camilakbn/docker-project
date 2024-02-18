@@ -22,6 +22,6 @@ jobs:
         node-version: 18.x
         cache: 'npm'
     - run: npm ci
-    - run: npm run server
+    - run: npm run server &
     - run: npm ru test:api
     - run: npm test
