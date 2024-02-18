@@ -1,0 +1,21 @@
+{
+  "name": "docker-project",
+  "version": "1.0.0",
+  "description": "docker project",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json",
+    "test:api": "newman run products.postman_collection.json -e local.postman_environment.json"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "Camila Nascimento",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
